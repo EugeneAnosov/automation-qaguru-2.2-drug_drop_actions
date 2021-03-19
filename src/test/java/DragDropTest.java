@@ -1,7 +1,4 @@
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
@@ -9,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class DragDropTest {
 
     @Test
-    void dragDropRectangle(){
+    void dragDropRectangle() {
 
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
